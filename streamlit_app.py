@@ -46,4 +46,4 @@ if ingredients:
     st.success('Your Smoothie is ordered, ' + name_on_order + '!', icon="✅")
 
 fruityvice_response = requests.get("https://www.googleapis.com/customsearch/v1?key=AIzaSyDGlAry0tpNXlgpMJyouELBKkxI71YFETI&cx=017576662512468239146:omuauf_lfve&q=lectures")
-st.text(fruityvice_response)
+st.text(fruityvice_response.json())
